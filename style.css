@@ -8,7 +8,7 @@ body {
 }
 
 header {
-  padding: 60px 20px;
+  padding: 30px 20px;
 }
 
 h1 {
@@ -23,13 +23,13 @@ h2 {
 
 .bio {
   max-width: 900px;
-  margin: 40px auto;
+  margin: 30px auto;
   line-height: 1.7;
   padding: 0 20px;
 }
 
 .section-title {
-  margin-top: 60px;
+  margin-top: 40px;
   font-size: 28px;
   font-weight: 700;
 }
