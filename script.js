@@ -1,7 +1,8 @@
-
 function openLightbox(src) {
-  document.getElementById('lightbox').style.display = 'flex';
-  document.getElementById('lightbox-img').src = src;
+  const lb = document.getElementById('lightbox');
+  const img = document.getElementById('lightbox-img');
+  img.src = src;
+  lb.style.display = 'flex';
 }
 
 function closeLightbox() {

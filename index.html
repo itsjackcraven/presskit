@@ -1,63 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Jack Craven - Official Site</title>
-<style>
-body { font-family: Arial, sans-serif; background:#111; color:#eee; margin:0; padding:0; }
-header { text-align:center; padding:40px 20px; font-size:48px; font-weight:bold; color:#e53935; }
-section { padding:20px 40px; max-width:900px; margin:auto; }
-img { width:100%; border-radius:10px; margin:20px 0; }
-.contact-box { background:#222; padding:20px; border-radius:10px; }
-label { display:block; margin-top:10px; }
-input, textarea { width:100%; padding:10px; border-radius:5px; border:none; margin-top:5px; }
-button { margin-top:15px; padding:12px 20px; border:none; background:#e53935; color:white; border-radius:5px; cursor:pointer; }
-footer { text-align:center; padding:20px; opacity:0.7; }
-</style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Jack Craven EPK</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
 </head>
 <body>
+<header>
+  <h1>JACK CRAVEN</h1>
+  <h2>Hip-Hop / R&B Artist · Toronto / London, ON</h2>
+</header>
 
-<header>JACK CRAVEN</header>
-
-<section>
-<h2>One Sheet</h2>
-<img src="images/one_sheet.jpg">
-
-<h2>Sirius XM Promo</h2>
-<img src="images/sirius_promo.png">
-
-<h2>Music</h2>
-<iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/4zCswyxB6PhtcE88Rwl5vF?utm_source=generator" width="100%" height="352" frameborder="0" allowfullscreen="" loading="lazy"></iframe>
-
-<h2>Social Links</h2>
-<p>
-Instagram: <a href="https://instagram.com/itsjackcraven" style="color:#e53935">@itsjackcraven</a><br>
-TikTok: <a href="https://tiktok.com/@itsjackcraven" style="color:#e53935">@itsjackcraven</a>
-</p>
-
-<h2>Contact</h2>
-<div class="contact-box">
-<p>Email: jackcravenmgmt@gmail.com</p>
-<p>Text: 1 (416) 839 7200</p>
-<p>Social: @itsjackcraven</p>
-
-<form>
-<label>Name</label>
-<input type="text">
-
-<label>Email</label>
-<input type="email">
-
-<label>Message</label>
-<textarea rows="6"></textarea>
-
-<button type="submit">Send</button>
-</form>
-</div>
-
+<section class="bio">
+  <p>Jack Craven is a Canadian Hip-Hop/R&B artist blending emotional storytelling, modern production, and immersive sonic textures. With a background in Music Industry Arts, Jack brings together his technical knowledge and artistic identity to create music that resonates deeply.</p>
 </section>
 
-<footer>© 2025 Jack Craven</footer>
+<section class="music">
+  <h3>Listen</h3>
 
+  <div class="embeds">
+
+    <!-- Spotify -->
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/7q65AtrPvffwqNKWDI66ki" width="100%" height="152" frameborder="0" allowfullscreen></iframe>
+
+    <!-- Apple Music -->
+    <iframe allow="autoplay *; encrypted-media *; fullscreen *;" frameborder="0" height="150" style="width:100%;max-width:660px;overflow:hidden;border-radius:12px;" 
+    sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" 
+    src="https://embed.music.apple.com/us/artist/jack-craven/1489262474"></iframe>
+
+    <!-- YouTube videos -->
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/QlB3c7_ViWg" frameborder="0" allowfullscreen></iframe>
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/fd93WTqSt4M" frameborder="0" allowfullscreen></iframe>
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/VG6dIQXwkeE" frameborder="0" allowfullscreen></iframe>
+
+  </div>
+</section>
+
+<section class="downloads">
+  <a href="Jack_Craven_EPK.pdf" class="btn">Download PDF EPK</a>
+</section>
+
+<section class="gallery">
+  <h3>Gallery</h3>
+  <p>Upload your images into the <strong>images/</strong> folder and they will appear here.</p>
+  <div class="grid"></div>
+</section>
+
+<section class="contact">
+  <h3>Contact / Booking</h3>
+  <p>Email: <a href="mailto:jackcravenbusiness@gmail.com">jackcravenbusiness@gmail.com</a></p>
+
+  <div class="social-icons">
+    <a href="https://open.spotify.com/artist/7q65AtrPvffwqNKWDI66ki" target="_blank">
+      <img src="icons/spotify.svg" alt="Spotify">
+    </a>
+    <a href="https://music.apple.com/us/artist/jack-craven/1489262474" target="_blank">
+      <img src="icons/apple.svg" alt="Apple Music">
+    </a>
+    <a href="https://www.youtube.com/@jackcraven" target="_blank">
+      <img src="icons/youtube.svg" alt="YouTube">
+    </a>
+    <a href="https://instagram.com/itsjackcraven" target="_blank">
+      <img src="icons/instagram.svg" alt="Instagram">
+    </a>
+  </div>
+</section>
+
+<div id="lightbox" onclick="closeLightbox()">
+  <img id="lightbox-img">
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
